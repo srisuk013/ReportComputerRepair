@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_baseline_lock_24"
+        android:title="แจ้งซ่อม"/>
+    <item
+        android:id="@+id/nav_history"
+        android:icon="@drawable/ic_outline_history_24"
+        android:title="ประวัติ"/>
+    <item
+        android:id="@+id/nav_status"
+        android:icon="@drawable/ic_baseline_perm_identity_24"
+        android:title="สถานะ"/>
+</menu>

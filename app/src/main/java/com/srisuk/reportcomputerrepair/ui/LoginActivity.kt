@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Toast
 import com.srisuk.reportcomputerrepair.R
 import com.srisuk.reportcomputerrepair.data.request.LoginRequest
+import com.srisuk.reportcomputerrepair.util.hideSoftKeyboard
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : BaseActivity() {
@@ -24,9 +25,11 @@ class LoginActivity : BaseActivity() {
                          startActivity(intent);
 
             }else{
-                Toast.makeText(baseContext, "Failed", Toast.LENGTH_SHORT).show()
+                Toast.makeText(baseContext, "ตรวจสอบรหัสอีกครั้ง", Toast.LENGTH_SHORT).show()
             }
         }
+
+        rootLayout.setOnClickListener { hideSoftKeyboard() }
 
     }
 }
