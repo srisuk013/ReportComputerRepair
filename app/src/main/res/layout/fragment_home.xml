@@ -3,14 +3,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    android:background="#FFEB3B">
+    android:padding="20dp"
+    android:background="@drawable/bg">
     
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_gravity="center"
         android:text="แจ้งซ่อม"
-        android:textSize="100dp"
-        />
+        android:textSize="30dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="100dp"
+        android:gravity="start"
+        android:hint="รายละเอียด"
+        android:textSize="20dp"
+        android:background="@drawable/custorm_input"
+        android:layout_height="200dp"/>
+    <Button
+        android:backgroundTint="#8F2F2F"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:id="@+id/btLogin"
+        android:background="@drawable/custorm_input"
+        android:text="แจ้งซ่อม"
+        android:textColor="#FFFF"
+        android:textStyle="bold" />
 
 </LinearLayout>

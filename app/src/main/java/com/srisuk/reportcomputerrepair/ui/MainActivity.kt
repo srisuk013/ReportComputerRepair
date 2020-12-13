@@ -2,14 +2,12 @@ package com.srisuk.reportcomputerrepair.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.StrictMode
 import androidx.fragment.app.Fragment
-import com.google.android.material.bottomnavigation.BottomNavigationMenuView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.srisuk.reportcomputerrepair.HistoryFragment
 import com.srisuk.reportcomputerrepair.HomeFragment
 import com.srisuk.reportcomputerrepair.R
-import com.srisuk.reportcomputerrepair.StatusFragment
+import com.srisuk.reportcomputerrepair.ProfileFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -32,7 +30,7 @@ class MainActivity : AppCompatActivity() {
                val selectedFragment: Fragment = when (item.itemId) {
                    R.id.nav_home -> HomeFragment()
                    R.id.nav_history -> HistoryFragment()
-                   else -> StatusFragment()
+                   else -> ProfileFragment()
                }
                replaceFragment(selectedFragment)
                true

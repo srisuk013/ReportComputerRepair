@@ -9,7 +9,7 @@
         android:icon="@drawable/ic_outline_history_24"
         android:title="ประวัติ"/>
     <item
-        android:id="@+id/nav_status"
+        android:id="@+id/nav_profile"
         android:icon="@drawable/ic_baseline_perm_identity_24"
-        android:title="สถานะ"/>
+        android:title="ข้อมูลส่วนตัว"/>
 </menu>

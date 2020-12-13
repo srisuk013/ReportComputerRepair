@@ -5,7 +5,6 @@ import android.os.StrictMode
 import androidx.appcompat.app.AppCompatActivity
 import com.srisuk.reportcomputerrepair.data.datasource.DataSource
 import com.srisuk.reportcomputerrepair.data.datasource.DataSourceImpl
-import com.srisuk.reportcomputerrepair.data.datasource.DataSources
 
 import org.jetbrains.exposed.sql.Database
 
@@ -15,7 +14,7 @@ abstract class BaseActivity:AppCompatActivity() {
         super.onCreate(savedInstanceState)
         StrictMode.setThreadPolicy(StrictMode.ThreadPolicy.Builder().permitAll().build())
         val host = "192.168.43.52"
-        val databaseName = "reportcomputerrepair"
+        val databaseName = "repairdb"
         val url = "jdbc:mysql://$host:3306/$databaseName?useUnicode=true&characterEncoding=utf-8"
         Database.connect(
             url = url,

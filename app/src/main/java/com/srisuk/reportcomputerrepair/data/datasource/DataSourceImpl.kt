@@ -30,7 +30,6 @@ object DataSourceImpl : DataSource {
                     .andWhere { Users.password eq req.password }
                     .count()
                     .toInt()
-
 //                    .map { MapObject.toUser(it) }
 //                    .single()
             }
